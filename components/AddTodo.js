@@ -11,7 +11,7 @@ const AddTodo = ({submit}) => {
   return (
     <View>
       <TextInput placeholder="new todo..." onChangeText={changeHandler} style={styles.input}/>
-      <Button onPress={()=> submit(text)} title='add todo' color='coral'/>
+      <Button onPress={()=> submit(text)} title='add todo' color='#3366ff'/>
     </View>
   );
 };
@@ -24,6 +24,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 6,
     borderBottomWidth: 1,
-    borderBottomColor: '#ddd'
+    borderBottomColor: '#ddd',
+    backgroundColor: '#fff',
+    borderRadius: 8
   }
 })
